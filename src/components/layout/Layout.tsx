@@ -66,7 +66,7 @@ function Layout(props: IProps) {
                 <Hidden smDown implementation="css">
                     <Drawer
                         classes={{
-                          paper: classes.drawerPaper,
+                        paper: classes.drawerPaper,
                         }}
                         variant="permanent"
                         open={false}
@@ -82,7 +82,7 @@ function Layout(props: IProps) {
                 </Paper>
             </main>
         </div>
-  );
+    );
 }
 
 export default Layout;

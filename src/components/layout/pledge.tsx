@@ -75,18 +75,23 @@ const routes: IAppRoute[] = [
   // },
   {
     requiredRoles: [appPermissions.roleReportView],
+    name: 'Pledges',
+    route: localRoutes.reports,
+    icon: AssessmentIcon,
+  },  {
+    requiredRoles: [appPermissions.rolePledgeView],
+    name: 'Pledges',
+    route: localRoutes.pledges,
+    icon: AssessmentIcon,
+  },
+
+
+  {
+    requiredRoles: [appPermissions.roleReportView],
     name: 'Reports',
     route: localRoutes.reports,
     icon: AssessmentIcon,
   },
-
-  {
-    requiredRoles: [appPermissions.roleReportView],
-    name: 'Pledges',
-    route: localRoutes.pledge,
-    icon: AssessmentIcon,
-  },
-
   {
     requiredRoles: [appPermissions.roleUserView, appPermissions.roleUserEdit],
     name: 'Admin',
